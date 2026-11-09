@@ -1,0 +1,77 @@
+Python Answers page 2 
+page 2 question 5
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+profit = (a * b) - ((a * c) + 100)
+print(profit)
+
+question 6
+
+n = int(input())
+n = abs(n)          # ignore sign if any
+
+first = n // 1000
+last = n % 10
+
+print(first + last)
+
+question 7 
+n = int(input())
+t = int(input())
+
+each_team = n // t
+left_out = n % t
+
+print(f"The number of friends in each team is {each_team} and left out is {left_out}")
+
+Question 8 
+
+S = int(input())
+D = int(input())
+N = int(input())
+
+remaining = S - D
+average = remaining / N
+
+print(round(average))
+
+Question 9 
+
+X = float(input())
+R = float(input())
+Y = float(input())
+
+interest = (X * R * Y) / 100
+total_amount = X + interest
+discount = 0.02 * interest
+final_amount = total_amount - discount
+
+print(f"Interest: {interest:.2f}")
+print(f"Total Amount: {total_amount:.2f}")
+print(f"Discount: {discount:.2f}")
+print(f"Final Settlement Amount: {final_amount:.2f}")
+
+Question 10 
+
+d1 = int(input())
+c1 = int(input())
+d2 = int(input())
+c2 = int(input())
+
+total_dollars = d1 + d2
+total_cents = c1 + c2
+
+extra_dollars = total_cents // 100
+remaining_cents = total_cents % 100
+
+total_dollars += extra_dollars
+
+print(total_dollars)
+print(remaining_cents)
+
+
+
+
